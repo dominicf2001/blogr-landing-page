@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="main.css">
   
   <title>Frontend Mentor | [Blogr]</title>
 
@@ -15,29 +17,82 @@
   </style>
 </head>
 <body>
-  Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-
-  Contact
-  Newsletter
-  LinkedIn
   
-  Login
-  Sign Up
+  
+  <header>
+    <nav id="header-nav">
+      <!-- logo -->
+      <div id="logo-container">
+        <img id="logo" src="images/logo.svg" alt="">
+      </div>
+      <!-- Navigation links-->
+      <ul id="header-nav-list">
+        <li class="header-nav-item">
+          <details class="dropdown">
+            <summary class="dropdown-summary">Product</summary>
+            <ul class="dropdown-list">
+              <li class="dropdown-item">
+                <a class="dropdown-link" href="#">Marketplace</a>
+              </li>
+              <li class="dropdown-item">
+                <a class="dropdown-link" href="#">Features</a>
+              </li>
+              <li class="dropdown-item">
+                <a class="dropdown-link" href="#">Integrations</a>
+              </li>
+            </ul>
+          </details>
+        </li>
+        <li class="header-nav-item">
+          <details class="dropdown">
+            <summary class="dropdown-summary">Company</summary>
+            <ul class="dropdown-list">
+              <li class="dropdown-item">
+                <a class="dropdown-link" href="#">Overview</a>
+              </li>
+              <li class="dropdown-item">
+                <a class="dropdown-link" href="#">About</a>
+              </li>
+              <li class="dropdown-item">
+                <a class="dropdown-link" href="#">Team</a>
+              </li>
+              <li class="dropdown-item">
+                <a class="dropdown-link" href="#">Blog</a>
+              </li>
+              <li class="dropdown-item">
+                <a class="dropdown-link" href="#">Careers</a>
+              </li>
+            </ul>
+          </details>
+        </li>
+        <li class="header-nav-item">
+          <details class="dropdown">
+            <summary class="dropdown-summary">Connect</summary>
+            <ul class="dropdown-list">
+              <li class="dropdown-item">
+                <a class="dropdown-link" href="#">Contact</a>
+              </li>
+              <li class="dropdown-item">
+                <a class="dropdown-link" href="#">Newsletter</a>
+              </li>
+              <li class="dropdown-item">
+                <a class="dropdown-link" href="#">LinkedIn</a>
+              </li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+      <!-- login -->
+      <ul id="header-login-list">
+        <li class="header-login-item">
+          <a id="login-link" href="#"><p>Login</p></a>
+        </li>
+        <li class="header-login-item">
+          <a id="signup-link" href="#"><p>Sign Up</p></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
   A modern publishing platform
   Grow your audience and build your online brand

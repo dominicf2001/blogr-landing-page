@@ -24,13 +24,19 @@ header {
     margin-left: 4em;
 }
 
-
+.dropdown {
+    position: relative;
+}
 
 .dropdown-summary {
     font-size: 14px;
     color: white;
     cursor: pointer;
     list-style: none;
+}
+
+.dropdown-summary:hover {
+    text-decoration: underline;
 }
 
 .dropdown-summary::after {
@@ -42,7 +48,31 @@ header {
     margin-left: 5px;
 }
 
+.dropdown-list {
+    position: absolute;
+    top: 30px;
+    background: white;
+    padding: 15px;
+    padding-right: 45px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.459);
+}
 
+.dropdown-item {
+    margin-top: 10px;
+}
+
+.dropdown-item:first-child {
+    margin-top: 0px;
+}
+
+.dropdown-link {
+    font-size: 14px;
+}
+
+.dropdown-link:hover {
+    font-weight: bold;
+}
 
 #header-login-list {
     width: 10em;

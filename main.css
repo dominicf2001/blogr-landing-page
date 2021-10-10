@@ -2,6 +2,7 @@ header {
     background-color: hsl(13, 100%, 72%);
     height: 35vh;
     border-bottom-left-radius: 75px;
+    font-family: 'Overpass', sans-serif;
 }
 
 #header-nav {
@@ -23,6 +24,8 @@ header {
     margin-left: 4em;
 }
 
+
+
 .dropdown-summary {
     font-size: 14px;
     color: white;
@@ -30,8 +33,19 @@ header {
     list-style: none;
 }
 
+.dropdown-summary::after {
+    content: "";
+    display: inline-block;
+    background-image: url(images/icon-arrow-light.svg);
+    width: 10px;
+    height: 7px;
+    margin-left: 5px;
+}
+
+
+
 #header-login-list {
-    width: 8em;
+    width: 10em;
     margin-left: auto;
     margin-right: 6em;
     display: flex;
@@ -42,4 +56,14 @@ header {
 .header-login-item a {
     color: white;
     font-size: 14px;
+}
+
+.header-login-item:last-child {
+    background:white;
+    padding: 10px 25px;
+    border-radius: 20px;
+}
+
+.header-login-item:last-child a {
+    color: hsl(13, 100%, 72%);
 }

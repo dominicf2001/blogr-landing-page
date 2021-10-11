@@ -23,6 +23,7 @@ header {
     justify-content: space-between;
     width: 15em;
     margin-left: 4em;
+    z-index: 1;
 }
 
 .dropdown {
@@ -136,3 +137,51 @@ header {
     margin-top: 1rem;
     font-size: 1rem;
 }
+
+#introduction-links-div {
+    width: max-content;
+    margin: auto;
+    margin-top: 2rem;
+    color: white;
+}
+
+#introduction-link-list {
+    display: flex;
+    width: 275px;
+    justify-content: space-evenly;
+}
+
+.introduction-link-item {
+    background:white;
+    border-radius: 20px;
+}
+
+.introduction-link-item:last-child {
+    background:hsl(13, 100%, 72%);
+}
+
+.introduction-link-item a {
+    color: hsl(13, 100%, 72%);
+    display: inline-block;
+    padding: 10px 25px;
+    border: rgb(255, 255, 255) 1px solid;
+    border-radius: 20px;
+    font-size: 14px; 
+}
+
+.introduction-link-item:last-child a {
+    color: hsl(0, 0%, 100%);
+}
+
+.introduction-link-item:first-child:hover {
+    opacity: 50%;
+}
+
+.introduction-link-item:last-child:hover {
+    background:white;
+}
+
+.introduction-link-item:last-child:hover a {
+    color: hsl(13, 100%, 72%);
+}
+

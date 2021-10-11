@@ -3,6 +3,7 @@ header {
     height: 35vh;
     border-bottom-left-radius: 75px;
     font-family: 'Overpass', sans-serif;
+    position: relative;
 }
 
 #header-nav {
@@ -110,4 +111,28 @@ header {
 
 .header-login-item:last-child:hover {
     opacity: 70%;
+}
+
+#introduction-container {
+    width: 100%;
+    min-width: 1000px;
+    position: absolute;
+    top: 40%;
+}
+
+#title-div {
+    width: max-content;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+#title {
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+#subtitle {
+    margin-top: 1rem;
+    font-size: 1rem;
 }

@@ -39,6 +39,7 @@ header {
 
 .dropdown-summary:hover {
     text-decoration: underline;
+    user-select: none;
 }
 
 .dropdown-summary::after {
@@ -187,6 +188,7 @@ header {
 
 main {
     font-family: 'Overpass', sans-serif;
+    overflow: hidden;
 }
 
 .content-section-container {
@@ -214,7 +216,6 @@ main {
 .content {
     margin: 3rem;
     width: 60%;
-    
 }
 
 .content h3 {
@@ -226,6 +227,7 @@ main {
 
 .content p {
     line-height: 1.6rem;
+    font-size: .9rem;
 }
 
 .content-img-div {
@@ -237,3 +239,45 @@ main {
 #editor-img{
     width:550px;
 }
+
+#infrastructure-container {
+    display: flex;
+    margin-top: 8vh;
+    background: hsl(237, 17%, 21%);
+    border-bottom-left-radius: 75px;
+    border-top-right-radius: 75px;
+    position: relative;
+    min-width: 1100px;
+}
+
+.infrastructure-content {
+    margin: 5rem;
+    margin-left: 50%;
+    width: 60%;
+}
+
+.infrastructure-content h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.infrastructure-content p {
+    line-height: 1.6rem;
+    font-size: .9rem;
+    width: 80%;
+    margin: auto;
+    color: hsl(0, 0%, 100%);
+    min-height: 100px;
+}
+
+
+#phones-img {
+    width: 400px;
+    position: absolute;
+    left: 5%;
+    top: -15%;
+}
+

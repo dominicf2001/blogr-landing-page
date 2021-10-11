@@ -185,32 +185,55 @@ header {
     color: hsl(13, 100%, 72%);
 }
 
+main {
+    font-family: 'Overpass', sans-serif;
+}
+
 .content-section-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr;
-    margin-top: 10vh;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 10fr;
+    margin-top: 8vh;
+    min-width: 1000px;
+    position: relative;
 }
 
 .content-container-title {
-    grid-column: 1 / 3;
+    grid-column: 1 / 4;
     margin: auto;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    color: hsl(208, 49%, 24%);
 }
 
 .content-div {
     margin: auto;
+    
 }
 
 .content {
     margin: 3rem;
+    width: 60%;
+    
 }
 
+.content h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: hsl(208, 49%, 24%);
+    margin-bottom: 1rem;
+}
+
+.content p {
+    line-height: 1.6rem;
+}
 
 .content-img-div {
     margin: auto;
+    grid-column: 2/3;
+    position: absolute;
 }
 
 #editor-img{
-    width: 500px;
+    width:550px;
 }

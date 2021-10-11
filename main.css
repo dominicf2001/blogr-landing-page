@@ -1,16 +1,22 @@
+body {
+    overflow: hidden visible;
+}
+
+
 header {
     background-color: hsl(13, 100%, 72%);
     height: 40vh;
     border-bottom-left-radius: 75px;
     font-family: 'Overpass', sans-serif;
     position: relative;
+    min-width: 900px;
 }
 
 #header-nav {
     display: flex;
     padding-top: 25px;
     margin-left: 6em;
-    min-width: 800px;
+    min-width: 700px;
 }
 
 #logo {
@@ -188,6 +194,7 @@ header {
 
 main {
     font-family: 'Overpass', sans-serif;
+    min-width: 900px;
 }
 
 .content-section-container {
@@ -197,8 +204,6 @@ main {
     margin-top: 8vh;
     min-width: 1000px;
     position: relative;
-    overflow: hidden;
-    z-index: 2;
 }
 
 .content-container-title {
@@ -237,7 +242,7 @@ main {
 }
 
 #editor-img{
-    width:550px;
+    width:480px;
 }
 
 #infrastructure-container {
@@ -249,7 +254,7 @@ main {
     border-bottom-left-radius: 75px;
     border-top-right-radius: 75px;
     position: relative;
-    min-width: 1000px;
+    min-width: 900px;
     background-image: url(images/bg-pattern-circles.svg);
     background-size: 600px;
     background-repeat: no-repeat;
@@ -278,10 +283,6 @@ main {
     max-height: 100px;
 }
 
-#infrastructure-img-container {
-    height: 100%;
-}
-
 #phones-img {
     width: 400px;
     position: absolute;
@@ -290,16 +291,11 @@ main {
     z-index: 1;
 }
 
-#phone-circle-div {
+.content-section-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 10fr;
+    margin-top: 8vh;
+    min-width: 1000px;
     position: relative;
-    height: 100%;
-    width: 80%;
-    overflow: hidden;
 }
-
-#phone-circle-img {
-    width: 0px;
-    bottom: 0%;
-    position: absolute;
-}
-

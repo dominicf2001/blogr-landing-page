@@ -14,8 +14,9 @@ header {
 
 #header-nav {
     display: flex;
-    padding-top: 25px;
+    padding-top: 40px;
     margin-left: 6em;
+    min-width: 665px;
 }
 
 .logo {
@@ -67,6 +68,7 @@ header {
 
 .dropdown-list {
     position: absolute;
+    margin-right:auto ;
     top: 30px;
     background: white;
     padding: 15px;
@@ -89,6 +91,27 @@ header {
 
 .dropdown-link:hover {
     font-weight: bold;
+}
+
+#mobile-nav-dropdown {
+    display: none;
+    position: relative;
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+#mobile-dropdown-summary {
+    width: 32px;
+    height: 18px;
+    background-image: url(images/icon-hamburger.svg);
+    transition: background-image .2s ease-in-out;
+}
+
+#mobile-nav-dropdown[open] #mobile-dropdown-summary {
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+    background-image: url(images/icon-close.svg);
 }
 
 #header-login-list {
@@ -278,7 +301,7 @@ header {
 }
 
 #phones-img {
-    width: 400px;
+    width: 370px;
     position: absolute;
     left: 1rem;
     top: -15%;
@@ -336,16 +359,6 @@ footer {
 }
 
 @media only screen and (max-width: 900px) {
-    body {
-        overflow: hidden:
-    }
-    #header-nav-list {
-        display: none;
-    }
-    
-    #header-login-list {
-        display: none;
-    }
 
     header {
         height: 75vh;
@@ -409,12 +422,21 @@ footer {
         display: none;   
     }
 
-    .logo {
-        margin-bottom: 4rem;
-    } 
 }
 
 @media only screen and (max-width: 600px) {
+    #header-nav-list {
+        display: none;
+    }
+    
+    #header-login-list {
+        display: none;
+    }
+
+    .logo {
+        margin-bottom: 4rem;
+    } 
+    
     footer {
         flex-direction: column;
         height: min-content;

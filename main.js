@@ -1,5 +1,7 @@
 const allDropdowns = document.querySelectorAll('.dropdown');
 
+const allDropdownLists = document.querySelectorAll('.dropdown-list');
+
 function dropdownToggle(e, selectedDropdown) {
     selectedDropdown.firstElementChild.classList.toggle('dropdown-summary-flipped');
     
@@ -23,4 +25,12 @@ window.addEventListener('click', () => {
             dropdown.open = false;
         }
     });
+})
+
+
+// Prevents dropdown arrow from changing on dropdownlist click
+allDropdownLists.forEach(dropdownlist => {
+    dropdownlist.addEventListener('click', () => {
+        dropdownlist.click();
+    })
 })

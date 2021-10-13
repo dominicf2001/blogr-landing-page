@@ -97,12 +97,12 @@
       <details id="mobile-nav-dropdown">
         <summary id="mobile-dropdown-summary"></summary>
         <div id="mobile-nav">
-          <ul class="header-nav-list mobile-list">
-            <li class="header-nav-item">
+          <ul class="header-nav-mobile-list">
+            <li class="header-nav-item mobile-item">
               <details class="dropdown">
-                <summary class="dropdown-summary">Product</summary>
-                <ul class="dropdown-list">
-                  <li class="flipped" class="dropdown-item">
+                <summary class="dropdown-summary mobile-summary">Product</summary>
+                <ul class="dropdown-list mobile-list">
+                  <li class="dropdown-item">
                     <a class="dropdown-link" href="#">Marketplace</a>
                   </li>
                   <li class="dropdown-item">
@@ -114,10 +114,10 @@
                 </ul>
               </details>
             </li>
-            <li class="header-nav-item">
+            <li class="header-nav-item mobile-item">
               <details class="dropdown">
-                <summary class="dropdown-summary">Company</summary>
-                <ul class="dropdown-list">
+                <summary class="dropdown-summary mobile-summary">Company</summary>
+                <ul class="dropdown-list mobile-list">
                   <li class="dropdown-item">
                     <a class="dropdown-link" href="#">Overview</a>
                   </li>
@@ -136,10 +136,10 @@
                 </ul>
               </details>
             </li>
-            <li class="header-nav-item">
-              <details class="dropdown">
-                <summary class="dropdown-summary">Connect</summary>
-                <ul class="dropdown-list">
+            <li class="header-nav-item mobile-item">
+              <details class="dropdown mobile-dropdown-end">
+                <summary class="dropdown-summary mobile-summary">Connect</summary>
+                <ul class="dropdown-list mobile-list">
                   <li class="dropdown-item">
                     <a class="dropdown-link" href="#">Contact</a>
                   </li>
@@ -153,7 +153,18 @@
               </details>
             </li>
           </ul>
-          <!-- login -->
+          
+          <div id="seperator"></div>
+
+          <ul id="mobile-login-list">
+            <li class="mobile-login-item">
+              <a id="login-link" href="#">Login</a>
+            </li>
+            <li class="mobile-login-item">
+              <a id="signup-link" href="#"><p>Sign Up</p></a>
+            </li>
+          </ul>
+
           <ul id="header-login-list">
             <li class="header-login-item">
               <a id="login-link" href="#">Login</a>
@@ -166,8 +177,6 @@
       </details>
   </nav>
   
-  
-
     <section id="introduction-container">
       <div id="title-div">
         <h1 id="title">A modern publishing platform</h1>

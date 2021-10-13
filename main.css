@@ -1,5 +1,5 @@
 body {
-    overflow: visible;
+    overflow: visible hidden;
     font-family: 'Overpass', sans-serif;
 }
 
@@ -15,7 +15,7 @@ header {
 #header-nav {
     display: flex;
     padding-top: 40px;
-    margin-left: 6em;
+    margin-left: 6em; 
     margin-right: 6em;
     min-width: 570px;
     align-items: center;
@@ -54,8 +54,9 @@ header {
     content: "";
     display: inline-block;
     background-image: url(images/icon-arrow-light.svg);
+    background-repeat: no-repeat;
     width: 10px;
-    height: 7px;
+    height: 8px;
     margin-left: 5px;
     transition:transform .25s ease-in-out;
 }
@@ -118,22 +119,112 @@ header {
 
 #mobile-nav {
     position: absolute;
+    display: flex;
+    flex-direction: column;
     width:60%;
     top: 15%;
     left: 0;
     right: 0;
     margin: auto;
     background: white;
-    padding: 15px;
-    padding-right: 45px;
+    padding: 30px;
     border-radius: 6px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.205);
+    z-index: 1;
+}
+
+.header-nav-mobile-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:auto;
+    z-index: 1;
+    text-align: center;
+}
+
+.mobile-item >.dropdown .dropdown-summary {
+    color: hsl(237, 17%, 21%);
+    font-size: 20px;
+}
+
+.mobile-item >.dropdown .dropdown-summary:hover {
+    text-decoration: none;
+}
+
+.mobile-item > .dropdown {
+    margin-bottom: 2em;
+}
+
+.mobile-dropdown-end {
+    margin-bottom: 0 !important;
+}
+
+.mobile-summary::after {
+    background-image: url(images/icon-arrow-dark.svg);
 }
 
 .mobile-list {
-    
+    position: static;
+    box-shadow: none;
+    background: rgba(218, 218, 218, 0.322);
+    padding: 25px 70px;
+    margin-top: 1em;
+}
+
+.mobile-list .dropdown-item {
+    color: hsl(237, 17%, 21%);
+    margin-bottom: 1.25em;
+}
+
+.mobile-list .dropdown-item:last-of-type {
+    margin-bottom: 0em;
+}
+
+.mobile-list .dropdown-item a {
+    font-size: 16px;
+    color: hsl(237, 17%, 21%);
+}
+
+#mobile-login-list {
+    width: 10em;
+    display: flex;
     flex-direction: column;
-    background: black;
+    align-items: center;
+    margin: 1.5em auto 0;
+}
+
+.mobile-login-item {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+}
+
+.mobile-login-item a {
+    color: hsl(237, 17%, 21%);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.mobile-login-item:last-child {
+    background:hsl(13, 100%, 72%);
+    border-radius: 20px;
+    margin-top: 1.5em;
+}
+
+.mobile-login-item:last-child a {
+    color: hsl(0, 0%, 100%);
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+.mobile-login-item:last-child:hover {
+    opacity: 70%;
+}
+
+#seperator {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.103);
+    height: 1px;
+    margin: 1em auto 0;
 }
 
 #header-login-list {
@@ -452,6 +543,10 @@ footer {
     
     .header-nav-list {
         display: none;
+    }
+
+    .header-nav-mobile-list {
+        display: block;
     }
     
     #header-login-list {

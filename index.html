@@ -29,7 +29,7 @@
         <img class="logo" src="images/logo.svg" alt="">
       </div>
       <!-- Navigation links-->
-      <ul id="header-nav-list">
+      <ul class="header-nav-list">
         <li class="header-nav-item">
           <details class="dropdown">
             <summary class="dropdown-summary">Product</summary>
@@ -94,16 +94,79 @@
           <a id="signup-link" href="#"><p>Sign Up</p></a>
         </li>
       </ul>
-
-    <details id="mobile-nav-dropdown">
-      <summary id="mobile-dropdown-summary"></summary>
-      <div id="mobile-nav">
-      </div>
-    </details>
-    
+      <details id="mobile-nav-dropdown">
+        <summary id="mobile-dropdown-summary"></summary>
+        <div id="mobile-nav">
+          <ul class="header-nav-list mobile-list">
+            <li class="header-nav-item">
+              <details class="dropdown">
+                <summary class="dropdown-summary">Product</summary>
+                <ul class="dropdown-list">
+                  <li class="flipped" class="dropdown-item">
+                    <a class="dropdown-link" href="#">Marketplace</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a class="dropdown-link" href="#">Features</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a class="dropdown-link" href="#">Integrations</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li class="header-nav-item">
+              <details class="dropdown">
+                <summary class="dropdown-summary">Company</summary>
+                <ul class="dropdown-list">
+                  <li class="dropdown-item">
+                    <a class="dropdown-link" href="#">Overview</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a class="dropdown-link" href="#">About</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a class="dropdown-link" href="#">Team</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a class="dropdown-link" href="#">Blog</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a class="dropdown-link" href="#">Careers</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li class="header-nav-item">
+              <details class="dropdown">
+                <summary class="dropdown-summary">Connect</summary>
+                <ul class="dropdown-list">
+                  <li class="dropdown-item">
+                    <a class="dropdown-link" href="#">Contact</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a class="dropdown-link" href="#">Newsletter</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a class="dropdown-link" href="#">LinkedIn</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+          <!-- login -->
+          <ul id="header-login-list">
+            <li class="header-login-item">
+              <a id="login-link" href="#">Login</a>
+            </li>
+            <li class="header-login-item">
+              <a id="signup-link" href="#"><p>Sign Up</p></a>
+            </li>
+          </ul>
+        </div>
+      </details>
   </nav>
-
-    
+  
+  
 
     <section id="introduction-container">
       <div id="title-div">
@@ -182,7 +245,7 @@
 
   <footer>
     <div class="logo-container">
-      <img class="logo" src="images/logo.svg" alt="">
+      <img class="footer-logo" src="images/logo.svg" alt="">
     </div>
     
     <nav id="footer-nav">

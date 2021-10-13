@@ -16,14 +16,16 @@ header {
     display: flex;
     padding-top: 40px;
     margin-left: 6em;
-    min-width: 665px;
+    margin-right: 6em;
+    min-width: 570px;
+    align-items: center;
 }
 
 .logo {
     width: 80px;
 }
 
-#header-nav-list {
+.header-nav-list {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -68,7 +70,7 @@ header {
 
 .dropdown-list {
     position: absolute;
-    margin-right:auto ;
+    margin-right: auto;
     top: 30px;
     background: white;
     padding: 15px;
@@ -95,7 +97,6 @@ header {
 
 #mobile-nav-dropdown {
     display: none;
-    position: relative;
     margin-left: auto;
     margin-right: 1rem;
 }
@@ -103,6 +104,7 @@ header {
 #mobile-dropdown-summary {
     width: 32px;
     height: 18px;
+    list-style: none;
     background-image: url(images/icon-hamburger.svg);
     transition: background-image .2s ease-in-out;
 }
@@ -114,10 +116,29 @@ header {
     background-image: url(images/icon-close.svg);
 }
 
+#mobile-nav {
+    position: absolute;
+    width:60%;
+    top: 15%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: white;
+    padding: 15px;
+    padding-right: 45px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.205);
+}
+
+.mobile-list {
+    
+    flex-direction: column;
+    background: black;
+}
+
 #header-login-list {
     width: 10em;
     margin-left: auto;
-    margin-right: 6em;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -359,13 +380,13 @@ footer {
 }
 
 @media only screen and (max-width: 900px) {
-
     header {
         height: 75vh;
     }
 
     #header-nav {
         margin-left: 3em;
+        margin-right: 3em;
     }
    
     #title {
@@ -425,7 +446,11 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-    #header-nav-list {
+    #header-nav {
+        min-width: 0;
+    }
+    
+    .header-nav-list {
         display: none;
     }
     
@@ -433,7 +458,11 @@ footer {
         display: none;
     }
 
-    .logo {
+    #mobile-nav-dropdown {
+        display: block;
+    }
+
+    .footer-logo {
         margin-bottom: 4rem;
     } 
     
